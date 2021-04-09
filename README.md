@@ -64,3 +64,6 @@ Error: Cannot find module '/src/gilded_rose.js'
 }
 ```
 I eventually realised that it was /spec/texteste_ficture.js that I was meant to run.
+
+
+Is the gilde_rose a front-end program without an html interface, that I'm running in the back-end via node.js?
