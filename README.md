@@ -1,5 +1,9 @@
 # Tech Test: Gilded Rose
 
+## Focus
+
+Ability to read, refactor and extend legacy code.
+
 ## Specifications
 
 Hi and welcome to team Gilded Rose. As you know, we are a small inn with a prime location in a
