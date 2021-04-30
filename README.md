@@ -48,6 +48,8 @@ https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/js-jasmine
 * There are a lots of exceptions in the above specs, so I would need to wrap my head around these first.
 * I've identify 5 different product types: "Conjured", "Sulfuras", "Backstage Passes", "Aged Brie" and the rest (that I'll call "Common").
 * Now that I understand how updateQuality works, I can create my own tests, checking that the quality of each product type decreases according to the specs.
+* In the first phase of refactoring, I've separated each item type to update the Quality based on their name (as these seems to be the same) and added a block to update conjured items according to the requirements. It's not super elegant yet as it is stil an `if/else if` statement but at least it is clear to read.
+* I initially use a switch statement and separated each block into its own function but I ended up having scope issues when calling them within the switch.
 
 ## Difficulties
 
@@ -69,5 +71,6 @@ Error: Cannot find module '/src/gilded_rose.js'
 ```
 I eventually realised that it was /spec/texteste_ficture.js that I was meant to run.
 
+* When I attempted to break down the `updateQuality()` into several smaller function I ended up having scope issues, so I decided to change the approach and stay with `if/ else if`.
 
 Is the gilde_rose a front-end program without an html interface, that I'm running in the back-end via node.js?
